@@ -21,3 +21,4 @@ C:\CodingDojo\survey\obj\Debug\netcoreapp2.1\Survey.Views.pdb
 C:\CodingDojo\survey\obj\Debug\netcoreapp2.1\Survey.dll
 C:\CodingDojo\survey\obj\Debug\netcoreapp2.1\Survey.pdb
 C:\CodingDojo\survey\obj\Debug\netcoreapp2.1\Survey.csproj.CopyComplete
+C:\CodingDojo\survey\obj\Debug\netcoreapp2.1\Razor\Views\Result\Index.g.cshtml.cs

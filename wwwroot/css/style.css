@@ -10,12 +10,13 @@
     width: 350px;
     padding: 20px;
     overflow: hidden;
+    height: 330px;
 }
 
 .container:after {
     content:'';
     display:block; /* or whatever else than inline */
-   clear:both;
+    clear:both;
 }
 
 .input {
@@ -39,6 +40,10 @@ button:hover {
 button:active {
     box-shadow: 2px 2px;
     font-size: .95em;
+}
+
+button:focus {
+    outline: none;
 }
 
 #comments {
