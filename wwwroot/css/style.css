@@ -27,23 +27,29 @@ button {
     background: #6FA69C;
     padding: 5px;
     border: black 2px solid;
-    box-shadow: 4px 4px;
+    box-shadow: 4px 4px black;
     float: right;
     margin-right: 40px;
+    color: #FFFCF5;
 }
 
 button:hover {
-    box-shadow: 6px 6px;
+    box-shadow: 6px 6px black;
     font-size: 1.05em;
 }
 
 button:active {
-    box-shadow: 2px 2px;
+    box-shadow: 2px 2px black;
     font-size: .95em;
 }
 
 button:focus {
     outline: none;
+}
+
+a {
+    text-decoration: none;
+    color: #FFFCF5;
 }
 
 #comments {
@@ -57,4 +63,8 @@ input, select, textarea {
 textarea {
     width: 300px;
     height: 100px;
+}
+
+h3 {
+    text-decoration: underline;
 }
