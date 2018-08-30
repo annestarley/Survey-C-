@@ -14,15 +14,19 @@ namespace YourNamespace.Controllers
 
         [HttpPost]
         [Route("method")]
-        public IActionResult Method()
+        public IActionResult Method(string YourName, string Location, string Language, string Comments)
         {
-            return RedirectToAction("ReturnResults");
+            return RedirectToAction("ReturnResults", new { name = YourName, location = Location, language = Language, comments = Comments });
         }
 
         [HttpGet]       
         [Route("result")] 
-        public IActionResult ReturnResults()
+        public IActionResult ReturnResults(string name, string location, string language, string comments)
         {
+            ViewBag.Name = name;
+            ViewBag.Location = location;
+            ViewBag.Language = language;
+            ViewBag.Comments = comments;
             return View("Result");
         }
     }
