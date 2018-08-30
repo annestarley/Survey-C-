@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=Jua');
+
+* {
+    font-family: 'Jua', sans-serif;
+}
+
+.container {
+    margin: auto;
+    border: black 2px solid;
+    width: 350px;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.container:after {
+    content:'';
+    display:block; /* or whatever else than inline */
+   clear:both;
+}
+
+.input {
+    padding: 10px
+}
+
+button {
+    background: #6FA69C;
+    padding: 5px;
+    border: black 2px solid;
+    box-shadow: 4px 4px;
+    float: right;
+    margin-right: 40px;
+}
+
+button:hover {
+    box-shadow: 6px 6px;
+    font-size: 1.05em;
+}
+
+button:active {
+    box-shadow: 2px 2px;
+    font-size: .95em;
+}
+
+#comments {
+    display: block;
+}
+
+input, select, textarea {
+    border: solid black 2px;
+}
+
+textarea {
+    width: 300px;
+    height: 100px;
+}

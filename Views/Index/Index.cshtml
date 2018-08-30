@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>Survey</title>
+        <link rel="stylesheet" href="~/css/style.css"/>
+    </head>
+    <body>
+        <div class="container">
+            <form action="method" method="post">
+                <div class="input">
+                    <label for="YourName">YourName:</label>
+                    <input type="text" name="YourName"/>
+                </div>
+                <div class="input">
+                    <label for="Location">Location:</label>
+                    <select name="Location">
+                        <option value="Seattle">Seattle</option>
+                        <option value="London">London</option>
+                        <option value="Paris">Paris</option>
+                        <option value="Beijing">Beijing</option>
+                    </select>
+                </div>
+                <div class="input">
+                    <label for="Language">Favorite Language:</label>
+                    <select name="Language">
+                        <option value="C#">C#</option>
+                        <option value="JavaScript">JavaScript</option>
+                        <option value="Python">Python</option>
+                    </select>
+                </div>
+                <div class="input">
+                    <label for="Comments" id="comments">Comments:</label>
+                    <textarea name="Comments"></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </body>
+</html>
