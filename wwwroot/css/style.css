@@ -11,6 +11,7 @@
     padding: 20px;
     overflow: hidden;
     height: 330px;
+    background: white;
 }
 
 .container:after {
@@ -20,7 +21,8 @@
 }
 
 .input {
-    padding: 10px
+    padding: 10px;
+    background: white;
 }
 
 button {
@@ -50,6 +52,7 @@ button:focus {
 a {
     text-decoration: none;
     color: #FFFCF5;
+    background:  #6FA69C;
 }
 
 #comments {
@@ -58,6 +61,7 @@ a {
 
 input, select, textarea {
     border: solid black 2px;
+    background: white;
 }
 
 textarea {
@@ -67,4 +71,9 @@ textarea {
 
 h3 {
     text-decoration: underline;
+    background: white;
+}
+
+p, label, select {
+    background: white;
 }
