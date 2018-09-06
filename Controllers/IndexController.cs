@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Survey.Models;
 
 namespace YourNamespace.Controllers 
 {
@@ -12,22 +13,17 @@ namespace YourNamespace.Controllers
             return View();
         }
 
-        [HttpPost]
-        [Route("method")]
-        public IActionResult Method(string YourName, string Location, string Language, string Comments)
+        [HttpPost("survey")]
+        public IActionResult Submission(SurveyData yourSurvey)
         {
-            return RedirectToAction("ReturnResults", new { name = YourName, location = Location, language = Language, comments = Comments });
+            return RedirectToAction("ReturnResults", yourSurvey);
         }
 
         [HttpGet]       
         [Route("result")] 
-        public IActionResult ReturnResults(string name, string location, string language, string comments)
+        public IActionResult ReturnResults(SurveyData yourSurvey)
         {
-            ViewBag.Name = name;
-            ViewBag.Location = location;
-            ViewBag.Language = language;
-            ViewBag.Comments = comments;
-            return View("Result");
+            return View("Result", yourSurvey);
         }
     }
 }
